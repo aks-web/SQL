@@ -1,0 +1,10 @@
+Query: create employee table with constraints
+
+CREATE TABLE employee_f1
+( 
+employee_id  number(10) Primary key,
+employee_name  varchar2(50) not null,
+email  varchar2(50) unique,
+age  number(10) ,
+dept_id number(10),
+FOREIGN KEY (dept_id)REFERENCES department_1(dept_id)
